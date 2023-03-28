@@ -84,7 +84,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-output
-          path: 'Code/02 Basics/04 Practice Project (Start)/dist/'
+          path: |
+            'Code/02 Basics/04 Practice Project (Start)/dist'
+            'Code/02 Basics/04 Practice Project (Start)/package.json'
   deploy:
     name: Deploy code
     runs-on: ubuntu-latest
