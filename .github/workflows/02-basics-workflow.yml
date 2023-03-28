@@ -99,6 +99,7 @@ jobs:
           path: download
       - name: check contents of cwd
         run: ls -lR
+        working-directory: .
       - name: check contents of download
         run: ls -lR
         working-directory: download
