@@ -27,3 +27,5 @@ jobs:
         run: npm run build
       - name: deploy
         run: echo "DEPLOYING ... ✅"
+      - name: Echo github context
+        run: echo "${{ toJSON(github) }}"
