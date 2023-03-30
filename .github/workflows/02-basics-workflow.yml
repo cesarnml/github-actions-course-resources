@@ -6,29 +6,6 @@ on:
 defaults:
   run:
     working-directory: 'Code/02 Basics/04 Practice Project (Start)'
-# jobs:
-#   deploy:
-#     name: Deploy code
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout Code
-#         uses: actions/checkout@v3
-#       - name: Install Node
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: '18.x'
-#       - name: Install code
-#         run: npm ci
-#       - name: Run lint
-#         run: npm run lint
-#       - name: Run test
-#         run: npm run test
-#       - name: Build step``
-#         run: npm run build
-#       - name: deploy
-#         run: echo "DEPLOYING ... ✅"
-#       - name: Echo github context
-#         run: echo "${{ toJSON(github) }}"
 jobs:
   lint:
     name: Lint code
