@@ -97,12 +97,6 @@ jobs:
         with:
           name: build-output
           path: download
-      - name: check contents of cwd
-        run: ls -lR
-        working-directory: .
-      - name: check contents of download
-        run: ls -lR
-        working-directory: download
       - name: Checkout Code
         uses: actions/checkout@v3
       - name: Install Node
